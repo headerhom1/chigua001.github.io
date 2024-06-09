@@ -50,32 +50,11 @@
 <body>
 <font size="30">收藏地址每24小时更新一次内容：https://chigua001.github.io/mm009.html</font>
   
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>浏览量统计</title>
-    <script>
-        // 检查本地存储中是否有浏览量数据
-        function initializeCounter() {
-            var counter = localStorage.getItem("pageViews");
-            if (counter) {
-                // 如果有，则增加浏览量
-                localStorage.setItem("pageViews", parseInt(counter) + 1);
-            } else {
-                // 如果没有，则初始化浏览量为1
-                localStorage.setItem("pageViews", 1);
-            }
-        }
- 
-        // 显示浏览量
-        function displayCounter() {
-            var counter = localStorage.getItem("pageViews");
-            document.getElementById("pageViews").innerText = "浏览量: " + counter;
-        }
-    </script>
-</head>
-<body onload="initializeCounter(); displayCounter();">
-    <div id="pageViews">加载浏览量...</div>
-</body>
-</html>
+<center>
+<div>
+	<a href="https://www.qian.blue/"> © 吃瓜</a>
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	<span id="busuanzi_container_site_uv" style='display:none'> 访客总人数<span id="busuanzi_value_site_uv"></span>人</span>
+	<span id="busuanzi_container_site_pv" style='display:none'> 本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+</div>
+</center>
